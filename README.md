@@ -1,5 +1,6 @@
 # AntibiogramJ_XML_Creator
-Abstract: Transforms an xls file in the format of the EUCAST to an XML file for the AntibiogramJ program.
+
+**Abstract:** Transforms an xls file in the format of the EUCAST to an XML file for the AntibiogramJ program.
 
 As the abstract says the program supports translation of an EUCAST type (similar format) xls (or xlsx) to an XML for the AntibiogramJ program (available at https://sourceforge.net/projects/antibiogramj/).
 
