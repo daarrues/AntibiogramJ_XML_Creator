@@ -27,6 +27,8 @@ For a given xls document it generates an XML with a structure similar to:
         - resistant
         - comments
 
+ Here * means that multiple elements of that type can appear at that level.
+
 # To be done:
 
 The program still has some flaws that can be corrected...
@@ -35,5 +37,5 @@ The program still has some flaws that can be corrected...
 
 - Try to get the data from the last sheet (of bacterias, M. Tuberculosis). The program searches for antibiotic family names and then gets all antibiotics for that family but M. Tuberculosis does not even use Miscellaneus agents as a family. 
 
-> ... but these are not very important as the M. Tuberculosis sheet does not provide us with any onformation of "Zone diameter breakpoints", the information that is used for AntibiogramJ and the notes are merely that, explanations for a number or a lack of information.
+> ... but these are not very important as the M. Tuberculosis sheet does not provide us with any information of "Zone diameter breakpoints", the information that is used for AntibiogramJ and the notes are merely that, explanations for a number or a lack of information.
   
