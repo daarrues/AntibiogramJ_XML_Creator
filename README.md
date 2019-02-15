@@ -27,13 +27,13 @@ For a given xls document it generates an XML with a structure similar to:
         - resistant
         - comments
 
- Here * means that multiple elements of that type can appear at that level.
+ > Here * means that multiple elements of that type can appear at that level.
 
 # To be done:
 
 The program still has some flaws that can be corrected...
 
-- Try to get the comments(notes) of each antibiotic. In the EUCAST format they are referenced using superindexes using commas, letters and numbers, all of that difficults the task as, for example, a 1 can have a 4 as a superindex and Java gets that as a 14.
+- Try to get the comments (notes) of each antibiotic. In the EUCAST format they are referenced using superindexes with commas, letters and/or numbers. All of that difficults the task as, for example, a 1 can have a 4 as a superindex and Java gets that as a 14.
 
 - Try to get the data from the last sheet (of bacterias, M. Tuberculosis). The program searches for antibiotic family names and then gets all antibiotics for that family but M. Tuberculosis does not even use Miscellaneus agents as a family. 
 
