@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    vc:maxVersion="1.1" vc:minVersion="1.0" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning">
+
+    <xs:element name="standard">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="metadata">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="name" type="xs:string"/>
+                            <xs:element name="version" type="xs:string"/>
+                            <xs:element name="validFrom" type="xs:date"/>
+                            <xs:element name="susceptibleGTorG" type="xs:string"/>
+                            <xs:element name="resistentLTorL" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="breakpoints">
+                    <xs:complexType>
+                        <xs:sequence maxOccurs="1">
+                            <xs:element maxOccurs="unbounded" name="familyBreakPoint">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="bacteriaFamily" type="xs:string"/>
+                                        <xs:element maxOccurs="unbounded" name="breakpoint">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="antibiotic">
+                                                  <xs:complexType>
+                                                  <xs:sequence>
+                                                  <xs:element name="name" type="xs:string"/>
+                                                  <xs:element name="family" type="xs:string"/>
+                                                  <xs:element name="diskContent" type="xs:string"/>
+                                                  </xs:sequence>
+                                                  </xs:complexType>
+                                                  </xs:element>
+                                                  <xs:element name="case" type="xs:string"/>
+                                                  <xs:element name="available" type="xs:boolean"/>
+                                                    <xs:element name="susceptible" type="xs:string"/>
+                                                    <xs:element name="resistant" type="xs:string"/>
+                                                  <xs:element name="comments" type="xs:string"/>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
